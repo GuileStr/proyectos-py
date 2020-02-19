@@ -7,7 +7,7 @@ Created on Mon Jan 27 09:14:50 2020
 
 n, m = map(int,input().split()) #1
 pattern = [('.|.'*(2*i + 1)).center(m, '-') for i in range(n//2)]#2
-print('\n'.join(pattern + ['Rivas hermosota'.center(m, '-')] + pattern[::-1]))#3
+print('\n'.join(pattern + ['Erika bb uwu'.center(m, '-')] + pattern[::-1]))#3
 
 #1:
 # map= Agarramos toda la linea de comando que sea ingresada
