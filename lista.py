@@ -15,8 +15,10 @@ Created on Mon Feb 10 14:36:30 2020
 
 
 listA = [1, 4, 3, 0]
+print(listA)
 listB = ['x', 'z', 't', 'q']
 listA.sort()
+print("sort",listA)
 listA.insert(0,100)
 listA.remove(3)
 listA.append(7)
