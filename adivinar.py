@@ -38,4 +38,4 @@ while not encontrado:
         intentos = intentos +1
     else:
         encontrado = True
-        print("Has acertado el número correcto es " , numero_usuario, " te ha llevado ", intentos," intentos"
+        print("Has acertado el número correcto es " , numero_usuario, " te ha llevado ", intentos," intentos")

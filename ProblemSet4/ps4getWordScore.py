@@ -29,4 +29,7 @@ def getWordScore(word, n):
     if n==len(word):
         suma+=50
     return suma
-print(getWordScore('outgnaw',7))
+
+wordjsjs=input()
+
+print(getWordScore(wordjsjs,len(wordjsjs)))

@@ -43,11 +43,23 @@ class MITPerson(Person):
     def __lt__(self, other):
         return self.idNum < other.idNum
         
+    def speak(self, utterance):
+        return (self.name + " says: " + utterance)
         
+class Proffesor(Person):
+    def __init__(self,name,departament):
+        MITPerson.__init__(self,name)
+        self.departament=departament
+    def speak(self,utterance):
+        new='In course'+self.departament+' we say '
+        return MITPerson.speak(self,new+utterance)
+    def lecture(self,topic):
+        return self.speak('it is obvious that' + topic)
         
 p1 = MITPerson('Eric')
 p2 = MITPerson('John Guttag')
 p3 = MITPerson('John Smith')
 p4 = Person('John')
 
-print(p1.getLastName())
+prfR=Proffesor('IS Ricardo','python')
+print(prfR.speak('Raul is joto '))

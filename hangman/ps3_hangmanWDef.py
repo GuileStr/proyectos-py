@@ -174,5 +174,6 @@ def hangman(secretWord):
 # Load the list of words into the variable wordlist
 # so that it can be accessed from anywhere in the program
 wordlist = loadWords()
-secretWord= "c"#chooseWord(wordlist).lower()
+
+secretWord= input()#chooseWord(wordlist).lower()
 print(hangman(secretWord))
