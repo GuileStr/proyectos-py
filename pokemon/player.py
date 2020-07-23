@@ -4,7 +4,6 @@ Created on Tue Jul  7 03:04:12 2020
 
 @author: palar
 """
-
 class player(object):
     def __init__(self, name):
         inventory=[]
